@@ -4,6 +4,9 @@ const ACCOUNTS = [
   "The New York Times",
   "NASA",
   "Whitehouse.gov",
+  "Time",
+  "Meta",
+  "Spotify",
 ];
 
 const STATS = [
@@ -23,32 +26,32 @@ const PRINCIPLES = [
 const SKILLS = [
   {
     title: "Go-to-Market Strategy",
-    body: "I own enterprise GTM end to end. Vertical takeout campaigns against incumbents like Adobe AEM and Sitecore, product launches, the GTM calendar, and the sales enablement that makes any of it convert.",
+    body: "I own enterprise GTM end to end. Standing up new verticals and takeout campaigns against incumbents like Adobe AEM, testing new channels, product launches, the GTM calendar, and the sales enablement that makes any of it convert.",
     tags: ["Vertical takeouts", "Product launches", "GTM calendar", "Sales enablement"],
   },
   {
     title: "Demand & Lifecycle",
-    body: "I capture intent the moment an account goes in market, then nurture it across the funnel. My lifecycle programs at WordPress VIP lifted engagement and shortened the time from lead to opportunity.",
+    body: "I capture intent the moment an account goes in market, then nurture it across the funnel. My lifecycle programs at WordPress VIP lifted engagement by over 8% and shortened the time from lead to opportunity.",
     tags: ["Lifecycle & nurture", "Intent capture", "Pipeline", "Funnel analytics"],
   },
   {
     title: "ABM & Intent",
-    body: "I stood up Demandbase at Zilliant from integration through intent triggers and nurtures, built the high-value account segments, and got sales and marketing running on the same plays.",
+    body: "I stood up Demandbase at Zilliant and WordPress VIP, from integration through intent triggers and nurtures, built the high-value account segments, and got sales and marketing running on the same plays.",
     tags: ["Demandbase", "Account scoring", "Intent triggers", "ABM"],
   },
   {
     title: "Email & Automation",
-    body: "I started at iContact, an email service provider, so I learned email from the inside. Deliverability, segmentation, behavioral triggers, and multi-step journeys. I build the logic up front so the system runs itself.",
+    body: "I started in B2B SaaS at iContact, an email service provider, so I learned email from the inside. Deliverability, segmentation, behavioral triggers, and multi-step journeys. I build the logic up front so the system runs itself. “Anyone who says email is dead is an idiot.” - Christina Child",
     tags: ["Deliverability", "Segmentation", "Behavioral triggers", "Marketo / HubSpot"],
   },
   {
     title: "Paid Media & Sponsorships",
-    body: "Most of my paid budget lives outside social and search. Sponsored newsletters, podcasts, Spotify audio, CTV, OOH, and content syndication, which has been my highest-ROI channel. I hold publishers to CPL, CAC, and ROAS, not vanity numbers.",
+    body: "Paid social and search are necessary evils. What gets me excited lives outside them: sponsored newsletters, podcasts, Spotify audio, CTV, OOH, and content syndication, my highest-ROI channel. I hold publishers to CPL, CAC, and ROAS, not vanity numbers.",
     tags: ["Sponsorships", "Spotify / Podcast", "CTV & OOH", "Syndication", "LinkedIn", "Google", "Reddit", "Meta"],
   },
   {
     title: "AI-Enabled Marketing Ops",
-    body: "I build the AI systems a marketing team runs on. Claude Code agents, MCP integrations, and workflows for campaign ops, content, and reporting. It’s also how I drove our early bet on AEO and GEO content.",
+    body: "I help build the AI systems a marketing team runs on. Claude Code agents, skills, MCP integrations, and workflows for campaign ops, content, and reporting. Nailing the orchestration layer is critical to scaling AI across teams.",
     tags: ["Claude Code", "MCP", "AEO / GEO", "Automation"],
   },
 ];
@@ -280,19 +283,19 @@ export default function Home() {
               At WordPress VIP I lead enterprise go-to-market for a developer-led
               CMS. Half the job is marketing to developers, the engineering
               leaders and technical architects evaluating the platform. The other
-              half is marketing to the marketers who buy alongside them. I run it
+              half is marketing to the marketers who buy alongside them. My team and I run it
               end to end: market research, campaign concepts, the GTM calendar,
               the assets, sales enablement, and the outbound that actually
               converts.
             </p>
             <p>
               I came up in scrappy startups in Raleigh before I moved into
-              enterprise, so I’m comfortable when the org chart changes every
-              quarter. I lead a high-performing team and coordinate a demand pod
-              across PMM, customer marketing, partner marketing, RevOps, Sales,
-              and the executive team. I earned my first promotion to team lead
-              three months into the job, and leading people has been the best part
-              of the work ever since.
+              enterprise, so I’m comfortable building the plane while flying it.
+              I lead a high-performing team and coordinate a demand pod across
+              PMM, customer marketing, partner marketing, RevOps, Sales, and the
+              executive team. I earned my first promotion to team lead three
+              months into the job, and I genuinely enjoy leading teams as well as
+              IC work. I’m collaborating either way.
             </p>
             <p>
               The newest piece is the AI infrastructure I build for marketing.
@@ -479,12 +482,13 @@ export default function Home() {
                 I grew up on the coast of North Carolina with five older
                 brothers, so I’m a tough cookie who can put you in a figure-four
                 leg lock until you tap. {'<insert Ric Flair "Woooo!">'} I don’t take myself too seriously,
-                and I see a lot of live stand-up.
+                which checks out for an Enneagram 7 (the fun one). I see a lot of
+                live stand-up, too.
               </p>
               <p>
                 I have two daughters, almost 5 and almost 3, and I’m married to an
                 ER doctor, which is very convenient. We live in Austin. On my last
-                maternity leave I got bored and built a UNC sports print-on-demand
+                maternity leave I got bored and built a UNC sports-themed print-on-demand
                 shop, tarheelshirts.com, now lovingly neglected.
               </p>
             </div>
