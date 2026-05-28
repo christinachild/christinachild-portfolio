@@ -1,26 +1,64 @@
 @import "tailwindcss";
 
+/* ── Brand palette ────────────────────────────────────────────────
+   Pink + yellow carried over from christinachild.com.
+   Tweak these six values to re-skin the whole site.            */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --brand-pink: #ff3e84;
+  --brand-pink-soft: #ffd7e6;
+  --brand-yellow: #ffce1f;
+  --brand-yellow-soft: #fff0b8;
+  --ink: #1b1016;
+  --paper: #fff7f1;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-brand-pink: var(--brand-pink);
+  --color-brand-pink-soft: var(--brand-pink-soft);
+  --color-brand-yellow: var(--brand-yellow);
+  --color-brand-yellow-soft: var(--brand-yellow-soft);
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+
+  --font-display: var(--font-display-face);
+  --font-sans: var(--font-body-face);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body-face), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Sections sit below the sticky nav when jumped to via anchor links */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+/* Marquee for the enterprise account strip */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 32s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
 }
