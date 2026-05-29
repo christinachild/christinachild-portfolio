@@ -143,6 +143,7 @@ const HOBBIES = [
   "Flower farmer",
   "Sourdough baker",
   "Pressed-flower artist",
+  "Silversmithing",
   "Photographer",
   "Professional hot dog enthusiast",
 ];
@@ -490,6 +491,13 @@ export default function Home() {
                 ER doctor, which is very convenient. We live in Austin. On my last
                 maternity leave I got bored and built a UNC sports-themed print-on-demand
                 shop, tarheelshirts.com, now lovingly neglected.
+              </p>
+              <p>
+                Credentials that didn’t make the professional résumé: varsity
+                tennis MVP and a Today Show DIY contest win. My hidden talents run
+                to salon-grade at-home manicures, calling the water temperature
+                from one toe dip, Chopped-style cooking from a nearly empty fridge,
+                and quoting every line of Dumb and Dumber.
               </p>
             </div>
           </div>
