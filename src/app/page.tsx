@@ -12,7 +12,7 @@ const ACCOUNTS = [
 const STATS = [
   { value: "$6M+", label: "in pipeline influenced" },
   { value: "27%", label: "higher average ACV moving upmarket" },
-  { value: "$500K+", label: "closed-won from a single white paper" },
+  { value: "$500K+", label: "closed-won from one white paper in 4 months" },
   { value: "12 yrs", label: "building B2B SaaS demand" },
 ];
 
@@ -41,7 +41,7 @@ const SKILLS = [
   },
   {
     title: "Email & Automation",
-    body: "I started in B2B SaaS at iContact, an email service provider, so I learned email from the inside. Deliverability, segmentation, behavioral triggers, and multi-step journeys. I build the logic up front so the system runs itself. “Anyone who says email is dead is an idiot.” - Christina Child",
+    body: "I started in B2B SaaS at iContact, an email service provider, so I learned email from the inside. Deliverability, segmentation, behavioral triggers, and multi-step journeys. I build the logic up front so the system runs itself. “Anyone who says email is dead is a dummy.” - Christina Child",
     tags: ["Deliverability", "Segmentation", "Behavioral triggers", "Marketo / HubSpot"],
   },
   {
@@ -67,9 +67,13 @@ const WORK = [
     approach:
       "I moved fast and built a body of content around it, anchored by a white paper on why WordPress is the CMS to future-proof your content for AI. Then I put it everywhere our buyers were.",
     metrics: [
-      { value: "$500K+", label: "in attributed closed-won revenue" },
+      { value: "$500K+", label: "closed-won in 4 months post-launch" },
       { value: "#1", label: "most SQLs of any content in my tenure" },
     ],
+    link: {
+      href: "https://wpvip.com/resource/future-proof-your-brand-for-the-ai-native-web/",
+      label: "Read the white paper",
+    },
   },
   {
     company: "WordPress VIP",
@@ -82,6 +86,7 @@ const WORK = [
       { value: "27%", label: "higher average ACV" },
       { value: "$6M+", label: "in pipeline influenced" },
     ],
+    link: null,
   },
   {
     company: "Zilliant",
@@ -94,6 +99,7 @@ const WORK = [
       { value: "+12%", label: "email open rate" },
       { value: "+15%", label: "click-to-open rate" },
     ],
+    link: null,
   },
   {
     company: "iContact",
@@ -106,8 +112,24 @@ const WORK = [
       { value: "8K+", label: "downloads at sub-$1 CPL" },
       { value: "3 mo", label: "to promotion to team lead" },
     ],
+    link: null,
   },
 ];
+
+const EXPERIENCE = [
+  { company: "WordPress VIP (Automattic)", title: "GTM Enterprise Lead", dates: "2021 to Present" },
+  { company: "Zilliant", title: "Senior Manager, Digital Marketing", dates: "2020 to 2021" },
+  { company: "Cision", title: "Senior Manager, Digital Marketing", dates: "2019 to 2020" },
+  { company: "iContact", title: "Senior Manager, Digital Marketing", dates: "2018 to 2019" },
+  { company: "WedPics · Crown Castle · Vital Plan", title: "Marketing, growth, and ecommerce roles", dates: "2011 to 2018" },
+];
+
+const TESTIMONIAL = {
+  quote:
+    "As the head of Global Demand Gen at Cision I had the fortunate opportunity to manage Christina as she took over all of our paid and digital strategies. From the moment we interviewed her I sensed something special in her abilities. No one on our team had every gotten perfect ratings across the board during the interview process. During our time working together Christina untangled the digital web Cision had spun for itself, pivoting our paid strategy from a brand focus to a revenue focus. Costs per demos were cut in half, spend became more efficient and eventually paid became the revenue channel we needed it to be. Christina is direct, a problem solver who tells it like it is. When she interviewed with me I had a former boss of hers tell me, ‘you’re an idiot if you don’t hire her...’ I gladly pass that along to any hiring manager or organization taking a look at Christina. I wish her all the best.",
+  name: "David Cardiel",
+  role: "Head of Global Demand Gen, Cision (managed Christina directly)",
+};
 
 const PROJECTS = [
   {
@@ -178,10 +200,11 @@ export default function Home() {
           <a href="#top" className="font-display text-lg font-extrabold tracking-tight">
             Christina&nbsp;Child
           </a>
-          <div className="hidden items-center gap-6 text-sm font-medium md:flex">
+          <div className="hidden items-center gap-5 text-sm font-medium lg:flex">
             <a href="#about" className="transition hover:text-brand-pink">About</a>
-            <a href="#expertise" className="transition hover:text-brand-pink">Expertise</a>
             <a href="#work" className="transition hover:text-brand-pink">Work</a>
+            <a href="#experience" className="transition hover:text-brand-pink">Experience</a>
+            <a href="#expertise" className="transition hover:text-brand-pink">Expertise</a>
             <a href="#building" className="transition hover:text-brand-pink">Building</a>
             <a href="#life" className="transition hover:text-brand-pink">Life</a>
             <a href="#contact" className="transition hover:text-brand-pink">Contact</a>
@@ -284,19 +307,20 @@ export default function Home() {
               At WordPress VIP I lead enterprise go-to-market for a developer-led
               CMS. Half the job is marketing to developers, the engineering
               leaders and technical architects evaluating the platform. The other
-              half is marketing to the marketers who buy alongside them. My team and I run it
-              end to end: market research, campaign concepts, the GTM calendar,
-              the assets, sales enablement, and the outbound that actually
-              converts.
+              half is marketing to the marketers who buy alongside them. My team
+              and I run it end to end: market research, campaign concepts, the GTM
+              calendar, the assets, sales enablement, and the outbound that
+              actually converts.
             </p>
             <p>
               I came up in scrappy startups in Raleigh before I moved into
-              enterprise, so I’m comfortable building the plane while flying it.
-              I lead a high-performing team and coordinate a demand pod across
-              PMM, customer marketing, partner marketing, RevOps, Sales, and the
-              executive team. I earned my first promotion to team lead three
-              months into the job, and I genuinely enjoy leading teams as well as
-              IC work. I’m collaborating either way.
+              enterprise, so I’m comfortable building the plane while flying it. I
+              lead a team of four and a $3.6M advertising budget, manage our paid
+              media and SEO agencies, and coordinate a demand pod across PMM,
+              customer marketing, customer success, partner marketing, events,
+              Sales, and the exec team. I earned my first promotion to team lead
+              three months into the job, and I genuinely enjoy leading teams as
+              well as IC work. I’m collaborating either way.
             </p>
             <p>
               The newest piece is the AI infrastructure I build for marketing.
@@ -318,6 +342,93 @@ export default function Home() {
             </li>
           ))}
         </ul>
+      </section>
+
+      {/* Selected Work */}
+      <section id="work" className="mx-auto max-w-6xl px-6 py-24">
+        <Eyebrow>Selected work</Eyebrow>
+        <h2 className="max-w-2xl font-display text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">
+          A few things I’m proud of
+        </h2>
+        <div className="mt-12 space-y-6">
+          {WORK.map((w) => (
+            <article
+              key={w.title}
+              className="rounded-3xl border-2 border-ink bg-paper p-8 sm:p-10"
+            >
+              <div className="grid gap-8 md:grid-cols-[1fr_2fr]">
+                <div>
+                  <span className="inline-block rounded-full bg-brand-yellow px-3 py-1 text-xs font-bold uppercase tracking-wide">
+                    {w.company}
+                  </span>
+                  <h3 className="mt-4 font-display text-2xl font-bold leading-tight">
+                    {w.title}
+                  </h3>
+                  {w.metrics.length > 0 && (
+                    <div className="mt-6 flex flex-wrap gap-6">
+                      {w.metrics.map((m) => (
+                        <div key={m.label}>
+                          <div className="font-display text-3xl font-extrabold text-brand-pink">
+                            {m.value}
+                          </div>
+                          <div className="mt-1 max-w-[10rem] text-sm text-ink/70">
+                            {m.label}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                <div className="space-y-4 text-lg leading-relaxed text-ink/80">
+                  <p>
+                    <span className="font-semibold text-ink">The challenge.</span>{" "}
+                    {w.challenge}
+                  </p>
+                  <p>
+                    <span className="font-semibold text-ink">What I did.</span>{" "}
+                    {w.approach}
+                  </p>
+                  {w.link && (
+                    <a
+                      href={w.link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block font-semibold text-brand-pink underline decoration-2 underline-offset-4 transition hover:text-ink"
+                    >
+                      {w.link.label} ↗
+                    </a>
+                  )}
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* Experience */}
+      <section id="experience" className="bg-brand-yellow-soft/30">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <Eyebrow>Experience</Eyebrow>
+          <h2 className="max-w-2xl font-display text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">
+            Where I’ve done it
+          </h2>
+          <ul className="mt-12 border-t-2 border-ink/10">
+            {EXPERIENCE.map((e) => (
+              <li
+                key={e.company}
+                className="flex flex-col gap-1 border-b-2 border-ink/10 py-6 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6"
+              >
+                <div>
+                  <h3 className="font-display text-xl font-bold">{e.company}</h3>
+                  <p className="text-ink/70">{e.title}</p>
+                </div>
+                <span className="font-display text-sm font-bold uppercase tracking-wide text-brand-pink sm:text-base">
+                  {e.dates}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
 
       {/* Expertise */}
@@ -367,54 +478,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Selected Work */}
-      <section id="work" className="mx-auto max-w-6xl px-6 py-24">
-        <Eyebrow>Selected work</Eyebrow>
-        <h2 className="max-w-2xl font-display text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">
-          A few things I’m proud of
-        </h2>
-        <div className="mt-12 space-y-6">
-          {WORK.map((w) => (
-            <article
-              key={w.title}
-              className="rounded-3xl border-2 border-ink bg-paper p-8 sm:p-10"
-            >
-              <div className="grid gap-8 md:grid-cols-[1fr_2fr]">
-                <div>
-                  <span className="inline-block rounded-full bg-brand-yellow px-3 py-1 text-xs font-bold uppercase tracking-wide">
-                    {w.company}
-                  </span>
-                  <h3 className="mt-4 font-display text-2xl font-bold leading-tight">
-                    {w.title}
-                  </h3>
-                  {w.metrics.length > 0 && (
-                    <div className="mt-6 flex flex-wrap gap-6">
-                      {w.metrics.map((m) => (
-                        <div key={m.label}>
-                          <div className="font-display text-3xl font-extrabold text-brand-pink">
-                            {m.value}
-                          </div>
-                          <div className="mt-1 max-w-[10rem] text-sm text-ink/70">
-                            {m.label}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-                <div className="space-y-4 text-lg leading-relaxed text-ink/80">
-                  <p>
-                    <span className="font-semibold text-ink">The challenge.</span>{" "}
-                    {w.challenge}
-                  </p>
-                  <p>
-                    <span className="font-semibold text-ink">What I did.</span>{" "}
-                    {w.approach}
-                  </p>
-                </div>
-              </div>
-            </article>
-          ))}
+      {/* Testimonial */}
+      <section id="praise" className="bg-ink text-paper">
+        <div className="mx-auto max-w-4xl px-6 py-24">
+          <Eyebrow>What people say</Eyebrow>
+          <figure>
+            <blockquote className="text-xl leading-relaxed sm:text-2xl">
+              “{TESTIMONIAL.quote}”
+            </blockquote>
+            <figcaption className="mt-8 text-base text-paper/70">
+              <span className="font-semibold text-paper">{TESTIMONIAL.name}</span>
+              , {TESTIMONIAL.role}
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -546,6 +622,9 @@ export default function Home() {
               LinkedIn
             </a>
           </div>
+          <p className="mt-8 text-sm font-semibold uppercase tracking-wide text-paper/50">
+            Austin, TX · Open to remote (US)
+          </p>
         </div>
       </section>
 
