@@ -484,7 +484,7 @@ export default function Home() {
                 brothers, so I’m a tough cookie who can put you in a figure-four
                 leg lock until you tap. {'<insert Ric Flair "Woooo!">'} I don’t take myself too seriously,
                 which checks out for an Enneagram 7 (the fun one). I see a lot of
-                live stand-up, too.
+                live music and stand-up, too.
               </p>
               <p>
                 I have two daughters, almost 5 and almost 3, and I’m married to an
