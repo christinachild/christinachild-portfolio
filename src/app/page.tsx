@@ -488,7 +488,7 @@ export default function Home() {
               </p>
               <p>
                 I have two daughters, almost 5 and almost 3, and I’m married to an
-                ER doctor, which is very convenient. We live in Austin. On my last
+                ER doctor, which is very convenient given their ages and apparent lack of athletic ability. We live in Austin. On my last
                 maternity leave I got bored and built a UNC sports-themed print-on-demand
                 shop, tarheelshirts.com, now lovingly neglected.
               </p>
