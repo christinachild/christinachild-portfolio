@@ -513,7 +513,7 @@ export default function Home() {
           </ul>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-ink/80">
             Ask me about my David Austin roses. And no, despite all of these
-            homestead-y hobbies, I am not a trad wife.
+            homestead-y hobbies, I am not a trad wife, just a serial hobbyist.
           </p>
         </div>
       </section>
