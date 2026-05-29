@@ -144,9 +144,9 @@ const PROJECTS = [
     name: "The Hippo Solution",
     domain: "thehipposolution.com",
     href: "https://thehipposolution.com",
-    status: "Launching soon",
-    live: false,
-    description: "Here purely because it’s a fascinating story. I’ll share it soon.",
+    status: "Live",
+    live: true,
+    description: "Here purely because it’s a fascinating story.",
   },
   {
     name: "Upcoming Construction",
@@ -191,9 +191,47 @@ function Eyebrow({ children }: { children: React.ReactNode }) {
   );
 }
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Christina Child",
+  url: "https://christinachild.com",
+  jobTitle: "Marketing & Go-to-Market Leader",
+  description:
+    "Go-to-market and lifecycle marketing leader with 12 years building B2B SaaS demand, currently running enterprise GTM at WordPress VIP.",
+  email: "christina.l.child@gmail.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Austin",
+    addressRegion: "TX",
+    addressCountry: "US",
+  },
+  worksFor: { "@type": "Organization", name: "WordPress VIP (Automattic)" },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "UNC Kenan-Flagler Business School",
+  },
+  sameAs: ["https://www.linkedin.com/in/christinachild/"],
+  knowsAbout: [
+    "Go-to-market strategy",
+    "Demand generation",
+    "Lifecycle marketing",
+    "Account-based marketing",
+    "Demandbase",
+    "Email marketing automation",
+    "Paid media and sponsorships",
+    "B2B SaaS marketing",
+    "AI marketing operations",
+  ],
+};
+
 export default function Home() {
   return (
     <div className="font-sans">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Nav */}
       <header className="sticky top-0 z-50 border-b border-ink/10 bg-paper/80 backdrop-blur">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">

@@ -17,12 +17,28 @@ export const metadata: Metadata = {
   title: "Christina Child | Marketing & GTM Leader",
   description:
     "Go-to-market and lifecycle marketing leader with 12 years building B2B SaaS demand. Currently running enterprise GTM at WordPress VIP.",
+  alternates: { canonical: "/" },
+  keywords: [
+    "Christina Child",
+    "go-to-market marketing",
+    "demand generation",
+    "lifecycle marketing",
+    "account-based marketing",
+    "ABM",
+    "Demandbase",
+    "B2B SaaS marketing",
+    "enterprise marketing leader",
+    "Austin marketing",
+  ],
+  authors: [{ name: "Christina Child", url: "https://christinachild.com" }],
+  creator: "Christina Child",
   openGraph: {
     title: "Christina Child | Marketing & GTM Leader",
     description:
       "Go-to-market and lifecycle marketing leader with 12 years building B2B SaaS demand.",
     url: "https://christinachild.com",
     siteName: "Christina Child",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
