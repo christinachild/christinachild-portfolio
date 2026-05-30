@@ -154,7 +154,7 @@ const PROJECTS = [
     href: "https://upcomingconstruction.com",
     status: "Coming soon",
     live: false,
-    description: "Me, finally working for myself. Spoiler: it’s exactly what it sounds like.",
+    description: "A homegrown data service that helps contractors, vendors, and suppliers source leads, faster.",
   },
 ];
 
