@@ -156,6 +156,14 @@ const PROJECTS = [
     live: false,
     description: "A homegrown data service that helps contractors, vendors, and suppliers source leads, faster.",
   },
+  {
+    name: "Required Listening",
+    domain: "App Store",
+    href: "https://apps.apple.com/us/app/required-listening/id6815825317",
+    status: "Live",
+    live: true,
+    description: "An iPhone app that tracks your way through the Rolling Stone 500 greatest albums.",
+  },
 ];
 
 const HOBBIES = [
@@ -543,7 +551,7 @@ export default function Home() {
             When I’m not running campaigns I’m vibe coding. Here’s what I’ve got
             going at the moment.
           </p>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {PROJECTS.map((p) => (
               <div
                 key={p.name}
