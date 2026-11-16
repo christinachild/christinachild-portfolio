@@ -26,7 +26,7 @@ const PRINCIPLES = [
 const SKILLS = [
   {
     title: "Go-to-Market Strategy",
-    body: "I own enterprise GTM end to end. Standing up new verticals and takeout campaigns against incumbents like Adobe AEM, testing new channels, product launches, the GTM calendar, and the sales enablement that makes any of it convert.",
+    body: "I own enterprise GTM soup to nuts. Standing up new verticals and takeout campaigns against incumbents like Adobe AEM, testing new channels, product launches, the GTM calendar, and the sales enablement that makes any of it convert.",
     tags: ["Vertical takeouts", "Product launches", "GTM calendar", "Sales enablement"],
   },
   {
@@ -41,7 +41,7 @@ const SKILLS = [
   },
   {
     title: "Email & Automation",
-    body: "I started in B2B SaaS at iContact, an email service provider, so I learned email from the inside. Deliverability, segmentation, behavioral triggers, and multi-step journeys. I build the logic up front so the system runs itself. “Anyone who says email is dead is a dummy.” - Christina Child",
+    body: "I started in B2B SaaS at iContact, an email service provider, so I learned email from the inside. Deliverability, segmentation, behavioral triggers, multi-step journeys. I build the logic up front so the system runs itself. “Anyone who says email is dead is a dummy.” - Christina Child",
     tags: ["Deliverability", "Segmentation", "Behavioral triggers", "Marketo / HubSpot"],
   },
   {
@@ -51,7 +51,7 @@ const SKILLS = [
   },
   {
     title: "AI-Enabled Marketing Ops",
-    body: "I help build the AI systems a marketing team runs on. Claude Code agents, skills, MCP integrations, and workflows for campaign ops, content, and reporting. Nailing the orchestration layer is critical to scaling AI across teams.",
+    body: "I help build the AI systems a marketing team runs on. Claude Code agents, skills, MCP integrations, and workflows for campaign ops, content, and reporting. Most marketing orgs are bolting AI onto old processes. The ones that win are rebuilding the processes.",
     tags: ["Claude Code", "MCP", "AEO / GEO", "Automation"],
   },
 ];
@@ -63,9 +63,9 @@ const WORK = [
     company: "WordPress VIP",
     title: "Catching the AI-native web wave",
     challenge:
-      "The market shifted to an AI-native web almost overnight. We had a short window to own the conversation before everyone else did.",
+      "The web shifted AI-native almost overnight, and we had a short window to get out in front before everyone else caught up.",
     approach:
-      "I moved fast and built a body of content around it, anchored by a white paper on why WordPress is the CMS to future-proof your content for AI. Then I put it everywhere our buyers were.",
+      "I moved fast. I wrote a white paper on why WordPress is the CMS to future-proof your content for AI, then ran a full campaign off it: paid, organic, syndication, sponsorships, outbound. Everywhere our buyers were.",
     metrics: [
       { value: "$500K+", label: "closed-won in 4 months post-launch" },
       { value: "#1", label: "most SQLs of any content in my tenure" },
@@ -81,7 +81,7 @@ const WORK = [
     challenge:
       "Winning bigger, more technical deals meant building demand in verticals where we had no presence, against incumbents like Adobe AEM and Sitecore.",
     approach:
-      "I built takeout and new-vertical campaigns from scratch. Messaging, creative, paid, content, and sales enablement, with the website working as our growth engine and account-based programs reaching the full buying committee.",
+      "I built takeout and new-vertical campaigns from scratch, messaging to enablement. The website did the heavy lifting for inbound, and ABM covered the full buying committee.",
     metrics: [
       { value: "27%", label: "higher average ACV" },
       { value: "$6M+", label: "in pipeline influenced" },
@@ -154,7 +154,7 @@ const PROJECTS = [
     href: "https://upcomingconstruction.com",
     status: "Coming soon",
     live: false,
-    description: "A homegrown data service that helps contractors, vendors, and suppliers source leads, faster.",
+    description: "A data service for Austin contractors and suppliers trying to find new jobs before everyone else does.",
   },
   {
     name: "Required Listening",
@@ -162,7 +162,7 @@ const PROJECTS = [
     href: "https://apps.apple.com/us/app/required-listening/id6815825317",
     status: "Live",
     live: true,
-    description: "An iPhone app that tracks your way through the Rolling Stone 500 greatest albums.",
+    description: "An iPhone app for working through the Rolling Stone 500 greatest albums.",
   },
 ];
 
@@ -192,8 +192,8 @@ function Highlight({ children }: { children: React.ReactNode }) {
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
-    <p className="mb-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-brand-pink">
-      <span className="h-2 w-2 rounded-full bg-brand-pink" />
+    <p className="mb-4 inline-flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-brand-pink">
+      <span aria-hidden className="h-px w-8 bg-brand-pink" />
       {children}
     </p>
   );
@@ -266,14 +266,6 @@ export default function Home() {
 
       {/* Hero */}
       <section id="top" className="relative overflow-hidden">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-brand-pink-soft blur-3xl"
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-brand-yellow-soft blur-3xl"
-        />
         <div className="relative mx-auto max-w-6xl px-6 pb-20 pt-20 sm:pt-28">
           <Eyebrow>Marketing &amp; GTM Leader</Eyebrow>
           <h1 className="max-w-4xl font-display text-5xl font-extrabold leading-[1.05] tracking-tight sm:text-7xl">
@@ -281,12 +273,10 @@ export default function Home() {
             <Highlight>up and to the right.</Highlight>
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-ink/80 sm:text-xl">
-            I’m Christina Child. I’ve spent 12 years turning marketing into real
-            pipeline for B2B SaaS, and for the last five I’ve run enterprise
-            go-to-market at WordPress VIP. I own the strategy and lead the team
-            behind it, marketing to the engineering leaders and the marketers who
-            deploy on the platform at companies like Salesforce, NASA, and The New
-            York Times.
+            I’m Christina Child. I’ve spent 12 years building B2B SaaS pipeline,
+            the last five running enterprise GTM at WordPress VIP. I market to
+            the engineering leaders and marketers who deploy the platform at
+            places like Salesforce, NASA, and The New York Times.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
@@ -351,30 +341,27 @@ export default function Home() {
           <div className="space-y-5 text-lg leading-relaxed text-ink/80">
             <p>
               At WordPress VIP I lead enterprise go-to-market for a developer-led
-              CMS. Half the job is marketing to developers, the engineering
-              leaders and technical architects evaluating the platform. The other
-              half is marketing to the marketers who buy alongside them. My team
-              and I run it end to end: market research, campaign concepts, the GTM
-              calendar, the assets, sales enablement, and the outbound that
-              actually converts.
+              CMS. I sell to the engineering leaders evaluating the platform and
+              to the marketers deploying on it. My team and I run the whole
+              thing: market research, GTM calendar and budget, campaign assets,
+              sales enablement, outbound.
             </p>
             <p>
               I came up in scrappy startups in Raleigh before I moved into
-              enterprise, so I’m comfortable building the plane while flying it. I
-              lead a team of four and a $3.6M advertising budget, manage our paid
-              media and SEO agencies, and coordinate a demand pod across PMM,
-              customer marketing, customer success, partner marketing, events,
-              Sales, and the exec team. I earned my first promotion to team lead
-              three months into the job, and I genuinely enjoy leading teams as
-              well as IC work. I’m collaborating either way.
+              enterprise, which means I’m equally at home in a $3.6M ad budget
+              and a scrappy launch nobody has staffed yet. I lead a team of
+              four, run our paid and SEO agencies, and quarterback a demand pod
+              with PMM, customer marketing, CS, partner marketing, events,
+              Sales, and the exec team. I got my first team-lead promotion
+              three months into my first job and have led teams ever since. I’m
+              happy doing IC work too; either way I’m in it.
             </p>
             <p>
-              The newest piece is the AI infrastructure I build for marketing.
-              I’m in Claude Code every day building agents, integrations, and
-              workflows that take over campaign ops, content prep, scoring, and
-              reporting. We get more output at the same headcount. Every manual
-              process is a future workflow, and working smarter beats working
-              harder every time.
+              More recently I’ve piloted AI infrastructure for marketing; I’m
+              in Claude Code every day wiring up agents, integrations, and
+              workflows that handle campaign ops, content prep, scoring, and
+              reporting. Same headcount, a lot more output. If a process is
+              still manual, it’s a workflow I haven’t built yet.
             </p>
           </div>
         </div>
@@ -615,11 +602,11 @@ export default function Home() {
                 shop, tarheelshirts.com, now lovingly neglected.
               </p>
               <p>
-                Credentials that didn’t make the professional résumé: varsity
-                tennis MVP and a Today Show DIY contest win. My hidden talents run
-                to salon-grade at-home manicures, calling the water temperature
-                from one toe dip, Chopped-style cooking from a nearly empty fridge,
-                and quoting every line of Dumb and Dumber.
+                Varsity tennis MVP in high school and once won a Today Show DIY
+                contest. At home I do salon-grade manicures, call the pool
+                temperature off a single toe dip, and cook Chopped-style out of
+                a nearly empty fridge. I can also quote every line of Dumb and
+                Dumber.
               </p>
             </div>
           </div>
@@ -635,7 +622,7 @@ export default function Home() {
           </ul>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-ink/80">
             Ask me about my David Austin roses. And no, despite all of these
-            homestead-y hobbies, I am not a trad wife, just a serial hobbyist.
+            homestead-y interests, I am not a trad wife, just a serial hobbyist.
           </p>
         </div>
       </section>
